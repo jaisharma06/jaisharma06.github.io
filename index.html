@@ -94,7 +94,8 @@
         }
 
         label {
-            font-size: large;
+            font-size: medium;
+            text-transform: uppercase;
         }
 
         ::-moz-selection {
@@ -106,6 +107,15 @@
         ::selection {
             color: #fff;
             background-color: #59ABE3;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button
+        { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0; 
         }
 
         @keyframes float {
@@ -127,7 +137,8 @@
 
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <span class="navbar-brand" href="#" style="font-weight: bold; padding: 0; font-size: 1.7em; text-transform: uppercase;">Jai Sharma</span>
+        <span class="navbar-brand" href="#" style="font-weight: bold; padding: 0; font-size: 1.7em; text-transform: uppercase;">Jai
+            Sharma</span>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" style="color :#fff!important;" href="#">Work</a>
