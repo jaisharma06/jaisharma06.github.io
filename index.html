@@ -67,6 +67,27 @@
             padding: 50px;
         }
 
+        .background-white
+        {
+           background-color: #fff; 
+        }
+
+        .background-grey
+        {
+            background-color: #f2f2f2;
+        }
+
+        .background-dark
+        {
+            background-color: #2f2f2f;
+        }
+
+        #bottom-menu
+        {
+            color : #fff; 
+            border-top:#000 thin solid;
+        }
+
         h5 {
             margin-bottom: 30px;
         }
@@ -119,8 +140,24 @@
 
         h3
         {
-            text-transform: uppercase;
             color:#59ABE3;
+        }
+
+        .uppercase
+        {
+            text-transform: uppercase;
+        }
+
+        .menu-item
+        {
+            color :#fff!important;
+        }
+
+        #avatar-img
+        {
+            box-sizing: border-box;
+            border: 5px white solid;
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
         }
 
         ::-moz-selection {
@@ -170,28 +207,28 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" style="color :#fff!important;" href="#">Work</a>
+                    <a class="nav-link menu-item" href="#">Work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color :#fff!important;" href="#">About</a>
+                    <a class="nav-link menu-item" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color :#fff!important;" href="#">Contact</a>
+                    <a class="nav-link menu-item" href="#">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container-fluid" style="background-color: #f2f2f2;">
+    <div class="container-fluid background-grey">
         <div class="row">
             <div class="col-sm-12">
-                <img src="Images/avatar.png" class="rounded-circle mx-auto d-block" alt="Cinque Terre" width="170"
-                    height="170" style="box-sizing: border-box; border: 5px white solid; box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);">
+                <img src="Images/avatar.png" id = "avatar-img" class="rounded-circle mx-auto d-block" alt="Jai Sharma" width="170"
+                    height="170">
             </div>
         </div>
         <div class="row">
             <div class="col-12 mx-auto d-block">
-                <h3 style="text-transform: none!important;">Hi, I am Jai Sharma!</h3>
+                <h3>Hi, I am Jai Sharma!</h3>
             </div>
         </div>
         <div class="col-sm-12 mx-auto d-block">
@@ -208,8 +245,8 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <h3>Work</h3>
+    <div class="container-fluid background-white">
+        <h3 class = "uppercase">Work</h3>
         <div class="row">
 
             <div class="col-sm-4" style="padding:5px;">
@@ -250,8 +287,8 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color:#f2f2f2;">
-        <h3>Skills</h3>
+    <div class="container-fluid background-grey">
+        <h3 class = "uppercase">Skills</h3>
         <div class="row">
             <div class="row">
                 <div class="col-sm-2 offset-sm-1 align-self-center">
@@ -273,7 +310,7 @@
     </div>
 
     <div class="container-fluid">
-        <h3 style="text-transform: uppercase;">Contact</h3>
+        <h3 class = "uppercase">Contact</h3>
         <div class="row d-flex h-100">
             <div class="col-sm-4">
                 <form class="form-horizontal">
@@ -314,11 +351,11 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="color : #fff; background-color: #2f2f2f; border-top:#000 thin solid;">
+    <div class="container-fluid background-dark" id="bottom-menu">
         <div class="row">
             <div class="col-sm-3 offset-sm-1">
                 <h5 style="text-transform: uppercase; font-weight: bold;">My Bunker</h5>
-                <p style="text-align: left!important; color:#fff; font-style: italic;">Some Address 987, +34 9054
+                <p style="color:#fff; font-style: italic;">Some Address 987, +34 9054
                     5455,
                     Madrid, Spain.</p>
             </div>
